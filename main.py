@@ -4,10 +4,17 @@ b=float(input('Enter 2nd Number:'))
 print("add,mul,sub,div")
 c=input("enter what do you want and type as shown above line:")
 if (c == 'add'):
-    print('here your result' ,a, '+', b, "=", a+b)
+    z=a+b
+    print('here your result' ,a, '+', b, "=", z)
 if (c=='mul'):
-    print('here your result' ,a, '*', b, "=", a*b)
+    z=a*b
+    print('here your result' ,a, '*', b, "=", z)
 if (c=='sub'):
-    print('here your result' ,a, '-', b, "=", a-b)
+    z=a-b
+    print('here your result' ,a, '-', b, "=", z)
 if (c=='div'):
-    print('here your result' ,a, '/', b, "=", a/b)
+    try:
+        z=a/b
+    except Exception as e:
+        z=None
+print('here your result' ,a, '/', b, "=", z)
